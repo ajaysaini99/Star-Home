@@ -32,6 +32,8 @@ body{
 
 .container-nav{
     display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
     justify-content: space-between;
 }
 header{
@@ -63,7 +65,7 @@ nav a{
     font-family: 'Roboto Mono', monospace;
     color: azure;
     /* margin-left: 2em; */
-    padding: 2.45em 0.75em;
+    padding: 2.45em 1em;
 }
 
 nav li a:hover{
@@ -87,9 +89,9 @@ nav li a:hover{
     /* max-width: 1000px;
     width: 95%; */
     margin: 0 auto;
-    background-image: url('/bgImages/burano.jpg');
+    /* background-image: url('/bgImages/burano.jpg'); */
     /* background-repeat: no-repeat; */
-    height: 65vh;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,10 +111,32 @@ nav li a:hover{
 #tag-line{
     color: #0066ff;
     font-weight: 600;
-    font-size: 4em;
+    font-size: 2em;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
     margin: 0;
     padding: 0;
     text-align:center;
+}
+.empty{
+    
+}
+
+.our_projects{
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    text-align: center;
+}
+.our_projects p{
+    margin: 2rem 0;
+    padding: 2rem 0;
+    display: inline-block;
+    /* border-bottom: 0.5rem solid rgb(33 94 146); */
+    font-size: 5em;
+    font-family: 'Inconsolata', monospace;
+    
+    color: rgb(33 94 146);
+    text-shadow: 4px 2px 1px #c29f9f;
 }
 
 @media only screen and (max-width: 650px)
@@ -139,7 +163,7 @@ nav li a:hover{
     /* width: 95%;
     max-width: 1000px; */
     
-    margin: 1.75em 1em;
+    margin: 0 1em;
     position: static;
     /* flex-wrap: wrap; */
     /* justify-content: space-between; */
@@ -159,7 +183,7 @@ nav li a:hover{
 }
 .content-boxes section:hover{
      box-shadow: 5px 10px 8px 4px rgb(0,0,0, 0.2);
-    
+     
     transform: scale(1.05);
     z-index: 10;
   
@@ -248,12 +272,13 @@ h2, p{
      /* border: 2px solid rgb(216, 24, 24); */
      /* margin: 0 1em 0 0; */
      margin: 0 0 0 0.35em;
+     transition: 0.5s;
  }
  .left-side-bar img:hover{
         border: 0.1rem solid rgb(173, 185, 168);
-        -ms-transform: scale(1.22); /* IE 9 */
-        -webkit-transform: scale(1.22); /* Safari 3-8 */
-         transform: scale(1.22); 
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+         transform: scale(1.1); 
         z-index: 101;
  }
 
