@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     
 </head>
 <body>
@@ -23,7 +23,10 @@
                         <a class="current" href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#mycontainer" >Just Sold</a>
+                        <a href="#our-projects">Buy</a>
+                    </li>
+                    <li>
+                        <a href="#mycontainer" >Sold</a>
                     </li>
                     <li>
                         <a href="">Contact</a>
@@ -38,9 +41,17 @@
         <p id="tag-line">accomplishing Dreams</p>
         <!-- <p style="font-size: 50px; color: brown;">hello</p> -->
     </div>
-
+    <div id="our-projects" >
+        <br>
+    </div>
+    <div class="our_projects" >
+        <p>Current Projects</p>
+    </div>
+    <div >
+        <br>
+    </div>
     <div class="content-boxes" id="content-box">
-        <section>
+        <section id="section-1" onmouseover="keep_changing(['img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg'])" onmouseout="stop_chaning()">
             
             <div>
                 <img class="section-image" src="img2.jpg" alt="" >
@@ -174,63 +185,12 @@
             <div>
                 <img class="section-image" src="img4.jpg" alt="" >
             </div>
-            <div class="section-description">
-                <h2 class="section-writing">Rajiv Vihar</h2>
-                <p class="section-writing">3 BHK</p>
-                <p class="section-writing">Location</p>
-                <p class="section-writing">80 Lakhs</p>
-                <!-- <img src="img2.jpg" alt="" style="width: 400px;"> -->
-            </div>
-        </section>
-        <section>
-            <div>
-                <img class="section-image" src="img4.jpg" alt="" >
-            </div>
-            <div class="section-description">
-                <h2 class="section-writing">Rajiv Vihar</h2>
-                <p class="section-writing">3 BHK</p>
-                <p class="section-writing">Location</p>
-                <p class="section-writing">80 Lakhs</p>
-                <!-- <img src="img2.jpg" alt="" style="width: 400px;"> -->
-            </div>
-        </section>
-        <section>
-            <div>
-                <img class="section-image" src="img4.jpg" alt="" >
-            </div>
-            <div class="section-description">
-                <h2 class="section-writing">Rajiv Vihar</h2>
-                <p class="section-writing">3 BHK</p>
-                <p class="section-writing">Location</p>
-                <p class="section-writing">80 Lakhs</p>
-                <!-- <img src="img2.jpg" alt="" style="width: 400px;"> -->
-            </div>
-        </section>
-        <section>
-            <div>
-                <img class="section-image" src="img4.jpg" alt="" >
-            </div>
-            <div class="section-description">
-                <h2 class="section-writing">Rajiv Vihar</h2>
-                <p class="section-writing">3 BHK</p>
-                <p class="section-writing">Location</p>
-                <p class="section-writing">80 Lakhs</p>
-                <!-- <img src="img2.jpg" alt="" style="width: 400px;"> -->
-            </div>
-        </section>
-    </div>
 
     <div id="Just Sold">
       
     </div>
     <script>
-        function changeBg(){
-
-            var bg = document.getElementById('welcomeId');
-            bg.style.backgroundImage = "url('img1.jpg')";
-         
-        }
-        changeBg();
+       
     </script>
     <script src="javascript.js"></script>
 </body>
