@@ -1,0 +1,262 @@
+
+body{
+    margin: 0;
+    
+    padding: 0;
+    background-color: #eee;;
+    /* background-color: rgb(236, 235, 235); */
+    /* justify-content: space-evenly; */
+    font-family: 'Roboto Mono', monospace;
+}
+ #logo-image{
+    width: 6.5rem;
+    margin: 0;
+}
+
+/* ***************
+    typography
+    *************** */
+.logo p{
+    /* border: 1px solid black; */
+    margin: 0;
+    color: azure;
+    font-size: 1.25rem;
+    text-align: center;
+    font-style: italic;
+    padding: 0.25rem 0 0;
+}
+
+/* ***************
+    layout
+    *************** */
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-color:rgb(33 94 146);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+}
+
+nav{
+    margin: auto 0;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 1.125rem;
+    font-family: 'Roboto Mono', monospace;
+    color: azure;
+    /* margin-left: 2em; */
+    padding: 2.45em 0.75em;
+}
+
+nav li a:hover{
+    color: crimson;
+    margin: 0;
+    /* background-color: rgb(240, 224, 86) ; */
+    background-color: #eee;
+}
+.current,.current:hover{
+    padding: 0 0.75em;
+    border-bottom: 0.125em solid rgb(216, 219, 218);
+    color: azure;
+    background-color: rgb(33 94 146);
+}
+
+/* ************
+    Welcome Window CSS
+***************/
+
+#welcomeId{
+    /* max-width: 1000px;
+    width: 95%; */
+    margin: 0 auto;
+    background-image: url('/bgImages/burano.jpg');
+    /* background-repeat: no-repeat; */
+    height: 65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.9; */
+    
+}
+
+#welcome-heading{
+    opacity: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#tag-line{
+    color: #0066ff;
+    font-weight: 600;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+@media only screen and (max-width: 650px)
+{
+    .container-nav{
+        display: block;
+    }
+    /* #logo-image{
+        text-align: center;
+    } */
+    .logo{
+        text-align: center;
+    }
+    nav ul{
+        display: block;
+    }
+    nav li{
+        text-align: center;
+        padding-top: 0.5em;
+    }
+}
+
+.content-boxes{
+    /* width: 95%;
+    max-width: 1000px; */
+    
+    margin: 1.75em 1em;
+    position: static;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
+    gap: 1.5em;
+    
+    
+}
+.content-boxes section{
+    /* width: 30%;
+    margin: 1em 0; */
+    border: 1px solid #d6d4d4;
+    background-color: rgb(255, 253, 253);
+    z-index: 0;
+    transition: 0.5s;
+}
+.content-boxes section:hover{
+     box-shadow: 5px 10px 8px 4px rgb(0,0,0, 0.2);
+    
+    transform: scale(1.05);
+    z-index: 10;
+  
+}
+
+.section-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: black;
+    font-weight: 600;
+}
+.section-image{
+    width: 100%;
+    padding: 0;
+    /* height: 10em; */
+}
+
+.section-description{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: #fffdfd;;
+}
+
+/* .section-description p{
+    padding: 1em;
+    padding-left: 1em;
+    font-family: 'Noto Sans KR', sans-serif;
+} */
+
+.section-writing{
+    padding-left: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.details-btn{
+    background-color: rgb(240, 49, 15);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.details-btn:hover{
+    transform: scale(1.2);
+    box-shadow: 0.15em 0.15em 0.8em rgb(240, 49, 15);
+}
+.details-btn a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.btn-div{
+    /* display: inline-flex; */
+    margin: 0px auto;
+    text-align: center;
+}
+div{
+    margin: 0.5rem;
+}
+h2, p{
+    margin: 0.25rem;
+    padding: 0.10rem;
+}
+
+
+/**************
+ file-1 CSS 
+ ***************/
+
+ .file-1-container{
+     display: grid;
+     grid-template-columns: 1fr 6fr 3fr;
+     gap: 1rem;
+     background-color: white;
+ }
+ .left-side-bar , .right-side-bar, .middle-bar{
+     margin: 0 0 0 0;
+     /* border: 2px solid rgb(170, 35, 35); */
+ }
+ /* .left-side-bar{
+     background-color: white;
+ } */
+ .left-side-bar img{
+     width: 100%;
+     /* border: 2px solid rgb(216, 24, 24); */
+     /* margin: 0 1em 0 0; */
+     margin: 0 0 0 0.35em;
+ }
+ .left-side-bar img:hover{
+        border: 0.1rem solid rgb(173, 185, 168);
+        -ms-transform: scale(1.22); /* IE 9 */
+        -webkit-transform: scale(1.22); /* Safari 3-8 */
+         transform: scale(1.22); 
+        z-index: 101;
+ }
+
+ .middle-bar img{
+     width: 100%;
+ }
